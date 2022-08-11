@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div class='bg-red-100 min-h-screen w-full flex flex-col items-center' >
+    <div class='bg-green-100 min-h-screen w-full flex flex-col items-center' >
       <h1>Chat</h1>
       <div class="flex w-1/2 flex-col">
         <For each={messages()}>
