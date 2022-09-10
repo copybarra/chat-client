@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import Headline from "../components/Headline";
 import Input from "../components/Input";
 
-const Register = () => {
+export default function Register(){
     return (
         <div className="min-h-screen flex flex-col items-center justify-center">
             <div className="max-w-sm flex flex-col items-center justify-center">
@@ -18,5 +18,3 @@ const Register = () => {
         </div>
     );
 }
-
-export default Register;

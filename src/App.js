@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Chat from "./pages/Chat";
 import Register from "./pages/Register";
 
-
 export default function App() {
   return (
     <Routes>

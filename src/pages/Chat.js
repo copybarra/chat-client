@@ -1,4 +1,4 @@
-const Chat = () => {
+export default function Chat() {
     return (
         <div className="grid grid-cols-[.4fr_1fr] max-w-screen max-h-screen justify-items-start content-center">
             <div className="grid grid-rows-[.13fr_1fr_.125fr] w-full h-screen items-start text-white border-r-2 border-r-white">
@@ -18,5 +18,3 @@ const Chat = () => {
         </div>
     );
 }
-
-export default Chat;
