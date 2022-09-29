@@ -6,8 +6,8 @@ export default function App() {
   return (
     <Routes>
       <Route>
-        <Route path="/" element={<Register/>}/>
-        <Route path="/chat" element={<Chat/>}/>
+        <Route path="/" element={<Register />} />
+        <Route path="/chat" element={<Chat />} />
       </Route>
     </Routes>
   );
