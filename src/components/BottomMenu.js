@@ -4,10 +4,10 @@ import settings from "../assets/icons/settings.png";
 
 export default function MenuBar(){
 
-  const imageClassName = 'w-[28px] h-auto opacity-70 hover:cursor-pointer hover:opacity-100';
+  const imageClassName = 'w-[30px] h-auto opacity-70 hover:cursor-pointer hover:opacity-100';
 
   return(
-    <div className="menu-bar grid grid-cols-3 w-full h-full content-center justify-items-center">
+    <div className="menu-bar flex flex-row w-full h-full items-center justify-around">
       <img className={imageClassName} alt="new chat" src={newChat} />
       <img className={imageClassName} alt="new group" src={newGroup} />
       <img className={imageClassName} alt="settings" src={settings} />
