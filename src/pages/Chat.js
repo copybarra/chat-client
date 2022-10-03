@@ -1,3 +1,4 @@
+import ChatElement from "../components/ChatElement";
 export default function Chat() {
     return (
         <div className="grid grid-cols-[.4fr_1fr] max-w-screen max-h-screen justify-items-start content-center">
@@ -5,8 +6,9 @@ export default function Chat() {
                 <div className="flex h-full items-center justify-center text-white border-2 border-white">
                     Profile Bar
                 </div>
-                <div className="flex h-full items-center justify-center text-white border-2 border-white">
-                    Side Chat Container
+                <div className="flex h-full items-start justify-start text-white border-2 border-white">
+                    {/* Side Chat Container */}
+                    <ChatElement username='Bjarne' subtitle="DaveDesigntYou010"/>
                 </div>
                 <div className="flex h-full items-center justify-center text-white border-2 border-white">
                     Bottom Menu Bar
