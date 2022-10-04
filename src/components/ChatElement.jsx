@@ -1,15 +1,23 @@
+/**
+ * Creates the chat element. Aditional functionality 
+ * can be added with elementProps wich contains all props for parent element.
+ * @param {{ elementProps: JSX.ElementAttributesProperty, avatarURL: string, username: string, subtitle: string }} props 
+ * @returns {JSX.IntrinsicElements.div} Chat Element
+ */
 export default function ChatElement(props){
     return (
-        <div className="flex w-full bg-transparent hover:bg-white bg-opacity-5">
-            <div className="">
-                <figure className="bg-[url('http://localhost:3000/smiley.png')] bg-no-repeat bg-cover w-4 h-4"/>
+        <div className="flex w-full items-center bg-transparent hover:bg-[rgba(255,255,255,0.05)]" {...props.elementProps}>
+            <div className='w-16 h-16 p-1'>
+                <figure className="w-full h-full bg-white bg-cover bg-no-repeat rounded-full" style={{
+                    backgroundImage: `url('${props.avatarURL}')`,
+                }}/>
             </div>
-            <div className="table-row-group">
+            <div className="select-none">
                 <div>
                     <strong>{props.username}</strong>
                 </div>
                 <div>
-                    <small>{props.subtitle}</small> 
+                    <span>{props.subtitle}</span> 
                 </div>
             </div>
         </div>
