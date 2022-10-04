@@ -8,7 +8,7 @@ export default function ChatElement(props){
     return (
         <div className="flex w-full items-center bg-transparent hover:bg-[rgba(255,255,255,0.05)]" {...props.elementProps}>
             <div className='w-16 h-16 p-1'>
-                <figure className="w-full h-full bg-white bg-cover bg-no-repeat rounded-full" style={{
+                <figure className="w-full h-full bg-white bg-no-repeat bg-cover bg-center bg-fixed rounded-full" style={{
                     backgroundImage: `url('${props.avatarURL}')`,
                 }}/>
             </div>
