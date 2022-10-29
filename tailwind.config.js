@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.js",
+    "./src/**/*.jsx",
     "./public/**/*.html"
   ],
   theme: {
@@ -16,6 +17,9 @@ module.exports = {
           900: '#242437'
         },
         input: '#d9d9d9'
+      },
+      backgroundImage:{
+        smiley: 'url(\'/smiley.png\')'
       }
     },
   },
