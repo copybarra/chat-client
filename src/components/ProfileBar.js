@@ -2,12 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import searchIcon from '../assets/icons/search.png';
 import profPicSample from '../assets/images/profpic-sample.png'
 
-export default function ProfileBar() {
+export default function ProfileBar({ avatar, name }) {
 
-  const [profPic, setProfPic]     = useState(undefined);
-  const [isOpen, setIsOpen]       = useState(false);
+  const [profPic, setProfPic] = useState(undefined);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const searchRef                 = useRef(null);
+  const searchRef = useRef(null);
 
   useEffect(() => setProfPic(profPicSample), []);
 
@@ -22,19 +22,20 @@ export default function ProfileBar() {
 
   return (
     <div className="profile-bar flex h-full px-4 items-center justify-between text-white border-r-0 border-white">
-      <img alt="profile pic" src={profPic} className="w-12" />
+      <img alt="profile pic" src={avatar} className="w-12 bg-white rounded-full" />
+      {!isOpen && <p>{name}</p>}
       <div
         className="flex rounded-lg bg-[#414163]"
         onMouseEnter={onMouseEnterSearchIcon}
         onBlur={onBlurSearchIcon}
       >
         <img className="w-8 h-8" alt="search" src={searchIcon} />
-        <input 
-          id="pb-search" 
-          type="text" 
-          ref={searchRef} 
-          className={`flex focus:outline-0 duration-500 items-center bg-[#414163] text-[12px] rounded-lg ${isOpen ? 'w-52' : 'w-0'}`} 
-          placeholder="Search..." 
+        <input
+          id="pb-search"
+          type="text"
+          ref={searchRef}
+          className={`flex focus:outline-0 duration-500 items-center bg-[#414163] text-[12px] rounded-lg ${isOpen ? 'w-52' : 'w-0'}`}
+          placeholder="Search..."
         />
       </div>
     </div>
