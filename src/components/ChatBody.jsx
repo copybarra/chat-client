@@ -37,7 +37,7 @@ export default function ChatBody({ socket, selectedChat }) {
 
   return (
     <div className="grid grid-rows-[.1fr_1fr_.115fr] w-full h-screen text-white bg-[#0F0F25]">
-      <ChatBodyHeader />
+      {selectedChat && <ChatBodyHeader selectedChat={selectedChat} />}
       <div className="flex flex-col p-8 gap-y-2 overflow-y-scroll">
         {messages.map(message => <ChatMessage key={message.id} id={message.id} content={message.content} server={message.id === -1} own={message.id === socket.id} />)}
       </div>

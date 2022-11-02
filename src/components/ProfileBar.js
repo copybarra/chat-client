@@ -1,15 +1,12 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import searchIcon from '../assets/icons/search.png';
-import profPicSample from '../assets/images/profpic-sample.png'
 
-export default function ProfileBar({ avatar, name }) {
+export default function ProfileBar({ profile, onSearchChats }) {
 
-  const [profPic, setProfPic] = useState(undefined);
+  const { name, avatar } = profile;
+
   const [isOpen, setIsOpen] = useState(false);
-
   const searchRef = useRef(null);
-
-  useEffect(() => setProfPic(profPicSample), []);
 
   const onMouseEnterSearchIcon = () => {
     setIsOpen(true);
@@ -22,8 +19,7 @@ export default function ProfileBar({ avatar, name }) {
 
   return (
     <div className="profile-bar flex h-full px-4 items-center justify-between text-white border-r-0 border-white">
-      <img alt="profile pic" src={avatar} className="w-12 bg-white rounded-full" />
-      {!isOpen && <p>{name}</p>}
+      <img alt={name} src={avatar} className="w-12 bg-white rounded-full" />
       <div
         className="flex rounded-lg bg-[#414163]"
         onMouseEnter={onMouseEnterSearchIcon}
@@ -34,8 +30,9 @@ export default function ProfileBar({ avatar, name }) {
           id="pb-search"
           type="text"
           ref={searchRef}
-          className={`flex focus:outline-0 duration-500 items-center bg-[#414163] text-[12px] rounded-lg ${isOpen ? 'w-52' : 'w-0'}`}
-          placeholder="Search..."
+          onChange={(e) => onSearchChats(e.target.value)}
+          className={`flex focus:outline-0 duration-500 items-center bg-[#414163] text-[12px] rounded-lg ${isOpen ? 'w-44' : 'w-0'}`}
+          placeholder={"Search..."}
         />
       </div>
     </div>
