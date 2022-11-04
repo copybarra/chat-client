@@ -5,7 +5,6 @@ import ChatBody from "../components/ChatBody";
 import { io } from 'socket.io-client';
 
 import ChatElement from "../components/ChatElement";
-import { NoChatSelected } from "../components/NoChatSelected";
 
 export default function Chat() {
   const chats = useRef([]);
@@ -65,7 +64,7 @@ export default function Chat() {
           <BottomMenu />
         </div>
       </div>
-      { selectedChat ? <ChatBody socket={socket} selectedChat={selectedChat} /> : <NoChatSelected profile={currentUser}/> }
+      <ChatBody socket={socket} currentUser={currentUser} selectedChat={selectedChat} />
     </div>
   );
 }

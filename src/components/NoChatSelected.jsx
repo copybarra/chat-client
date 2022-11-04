@@ -1,4 +1,4 @@
-export function NoChatSelected({ profile }){
+export default function NoChatSelected({ profile }){
 
   const {name, avatar} = profile;
 
