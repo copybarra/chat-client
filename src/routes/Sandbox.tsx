@@ -1,8 +1,129 @@
 export default function SandBox() {
   return (
-    <section>
+    <section style={{ maxHeight: "100vh", overflow: "scroll" }}>
       <h1>Sandbox</h1>
-      Dev area to test things out.
+      <div>
+        Dev area to test things out. Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things out.
+        Dev area to test things out. Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things
+        out.Dev area to test things out.Dev area to test things out.Dev area to
+        test things out.Dev area to test things out.Dev area to test things out.
+      </div>
     </section>
-  )
+  );
 }

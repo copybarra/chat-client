@@ -6,19 +6,19 @@ type ChatElementProps = {
 }
 
 export default function ChatElement({ user, lastMSG = 'Empty Chat' }: ChatElementProps): JSX.Element {
-  const avatarURL = `url("https://api.dicebear.com/5.x/pixel-art/png?seed=${user}")`;
+  const avatarURL = `url("https://api.dicebear.com/5.x/initials/png?seed=${user}")`;
   return (
-    <div id={style.chatElementBox}>
+    <div draggable={true} className={style.chatElementBox}>
       <div className={style.avatar}>
         <span style={{
           backgroundImage: avatarURL,
         }} />
       </div>
-      <div id={style.chatElementRightBox}>
-        <div id={style.chatElementUserName}>
+      <div className={style.chatElementRightBox}>
+        <div className={style.chatElementUserName}>
           {user}
         </div>
-        <sub id={style.chatElementLastMSG}>
+        <sub className={style.chatElementLastMSG}>
           {lastMSG}
         </sub>
       </div>

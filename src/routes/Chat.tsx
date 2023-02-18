@@ -1,20 +1,17 @@
-import style from '../styles/Chat.module.scss'
-import ChatElement from '../components/ChatElement'
-import ChatBody from '../components/ChatBody'
-import Contacts from '../components/Contacts'
+import style from '../styles/Chat.module.scss';
+import ChatElement from '../components/ChatElement';
+import ChatBody from '../components/ChatBody';
+import { generateTestChats } from '../helpers/generateTestChats';
 
 export default function Chat({ }) {
   return (
     <div className={style.chat}>
       <div className={style.sidebar}>
-        {Array(10).fill({
-          user: 'Bjarne Voigtländer',
-        }).map(chat => {
+        {generateTestChats(100).map((chat, i) => {
           return (
-            <ChatElement user={chat.user} />
+            <ChatElement key={i} {...chat} />
           )
         })}
-        <Contacts />
       </div>
       <ChatBody />
     </div>

@@ -1,55 +1,59 @@
-$rounded-full: 9999px;
+@import "./theme.scss";
 
-#chatElementBox {
+.chatElementBox {
   width: 100%;
   display: flex;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: gray;
-  background-color: orange;
+  border-bottom-color:  Theme("tw-purple", 400);;
+  background-color: Theme("tw-purple", 200);
   flex-direction: row;
   padding: 5px;
   align-items: center;
+  user-select: none;
 
   &:hover {
-    background: black;
+    background-color: Theme("tw-purple", 300);;
   }
 
-  .avatar {
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    border-style: solid;
-    border-radius: $rounded-full;
-
-    span {
-      border-radius: $rounded-full;
-      display: flex;
-      width: 100%;
-      height: 100%;
-
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-
-  #chatElementRightBox {
+  
+  .chatElementRightBox {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
 
-    #chatElementUserName {
+    .chatElementUserName {
       font-weight: bold;
       font-size: 20px;
       display: flex;
       margin: 0;
     }
 
-    #chatElementLastMSG {
+    .chatElementLastMSG {
       font-weight: light;
       display: flex;
     }
   }
 
 }
+
+.avatar {
+    margin: 5px;
+    min-width: 50px;
+    min-height: 50px;
+    border-style: solid;
+    border-color: Theme("tw-purple", 500);
+    background-color: Theme("tw-purple", 700);
+    border-radius: $rounded-full;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      border-radius: $rounded-full;
+      min-width: 50px;
+      min-height: 50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }

@@ -1,19 +1,38 @@
-.chatBody {
-  background-color: blue;
+@import './theme.scss';
+.chat {
   display: flex;
   flex-direction: column;
-
+  height: 100vh;
   .chatLog {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow-y: scroll;
+    padding: 1rem;
+    .message {
+      position: relative;
+      border: .1rem solid #000;
+      background-color: #fff;
+      margin: 1rem;
+      padding: .5rem;
+      width: fit-content;
+      font-weight: 900;
+      box-shadow: 10px 10px #8c7737;
+      &.sent {
+        align-self: flex-start;
+      }
+      &.received {
+        align-self: flex-end;
+      }
+    }
   }
-
-  .message {
-    background: url(../assets/space.jpg);
-    margin: 1rem;
-    padding: .5rem;
-    width: fit-content;
-    font-weight: 900;
+  input {
+    border: .1rem solid #000;
+    background-color: #fff;
+    height: 3rem;
+    margin: .5rem;
+    margin-top: 0;
+    border-radius: $rounded-full;
   }
 }

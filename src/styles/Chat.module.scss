@@ -1,9 +1,8 @@
 .chat {
   display: grid;
   grid-template-columns: 1fr 4fr;
-
   .sidebar {
-    background-color: red;
+    height: 100vh;
     overflow-y: scroll;
   }
 }

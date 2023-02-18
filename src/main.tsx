@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Login from './components/Login'
-import Chat from './routes/Chat'
-import SandBox from './routes/Sandbox'
 import './styles/index.scss'
+
+const Login = React.lazy(() => import("./routes/Login"));
+const Chat = React.lazy(() => import("./routes/Chat"));
+const SandBox = React.lazy(() => import("./routes/Sandbox"));
 
 const router = createBrowserRouter([
   {
