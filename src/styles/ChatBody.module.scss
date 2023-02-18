@@ -1,0 +1,19 @@
+.chatBody {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+
+  .chatLog {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .message {
+    background: url(../assets/space.jpg);
+    margin: 1rem;
+    padding: .5rem;
+    width: fit-content;
+    font-weight: 900;
+  }
+}
